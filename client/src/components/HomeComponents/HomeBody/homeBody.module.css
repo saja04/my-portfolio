@@ -2,12 +2,14 @@
 
 .mainDiv{
     margin-top: 20vh;
-    margin-left: 50vw
+    margin-left: 10vw;
+    margin-right: 5vw
 }
 
 .name{
     display: flex;
     flex-direction: row;
+    margin-bottom: 3vh;
 }
 
 .federico{
@@ -15,23 +17,28 @@
     display: flex;
     color: #a54ff0;
     font-family: 'Quicksand', sans-serif;
+    font-size: 4vw;
 }
 .saa{
     display: flex;
     color: white;
     font-family: 'Quicksand', sans-serif;
+    font-size: 4vw;
 }
 
 .mainDiv h2{
     color: white;
+    font-size: 2vw;
     font-family: 'Quicksand', sans-serif;
 }
 
 
 .normalText{
-    color: white;
+    color: rgb(184, 184, 184);
+    font-size: 1.8vw;
 }
 
 .fullStack{
+    font-size: 1.8vw;
     color: #a54ff0;
 }
