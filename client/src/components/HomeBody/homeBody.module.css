@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+.mainDiv{
+    margin-top: 20vh;
+    margin-left: 60vw
+}
+
+.name{
+    display: flex;
+    flex-direction: row;
+}
+
+.federico{
+    margin-right: 1vw;
+    display: flex;
+    color: #a54ff0;
+    font-family: 'Quicksand', sans-serif;
+}
+.saa{
+    display: flex;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.mainDiv h2{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.description{
+    display: flex;
+    flex-direction: row;
+}
+.description h3 {
+    color: white;
+}

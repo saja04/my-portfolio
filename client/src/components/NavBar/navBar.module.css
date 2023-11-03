@@ -1,0 +1,45 @@
+
+.mainDiv{
+    display: flex;
+    position: static;
+    flex-direction: column;
+    align-items: center;
+
+    background: linear-gradient(-45deg, rgb(38, 0, 71), rgb(76, 0, 143) );
+    width: 9vw;
+    height: 100vh;
+}
+
+.logoContainer{
+    background-color: #380366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9vw;
+    height: 15vh;
+}
+
+.logo{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width: 6vw;
+    height: max-content;
+}
+
+.NavLink{
+    flex-direction: column;
+    margin-top: 10vh;
+    /* margin-left:2vw; */
+    text-decoration: none;
+}
+
+.buttonContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.buttonLogo{
+    width: 1.5vw;
+}
