@@ -11,9 +11,9 @@ const HomeBody = () => {
           <h1 className={style.saa}>Saa</h1>
         </div>
         <div className={style.description}>
-          <h3>Un</h3>
-          <h3>Full-Stack Web Developer orientado a BackEnd</h3>
-          <h3>
+          <h3 className={style.normalText}>
+            Un <span className={style.fullStack}>Full-Stack Web Developer</span>{" "}
+            orientado a <span className={style.fullStack}>BackEnd</span>{" "}
             interesado en ampliar y aprender nuevas habilidades como
             desarrollador.
           </h3>

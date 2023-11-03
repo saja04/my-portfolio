@@ -2,7 +2,7 @@
 
 .mainDiv{
     margin-top: 20vh;
-    margin-left: 60vw
+    margin-left: 50vw
 }
 
 .name{
@@ -27,10 +27,11 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-.description{
-    display: flex;
-    flex-direction: row;
-}
-.description h3 {
+
+.normalText{
     color: white;
+}
+
+.fullStack{
+    color: #a54ff0;
 }
