@@ -8,9 +8,29 @@
 }
 
 .jobTitle{
-    color: rgb(180, 180, 180);
+    margin-left: 7vw;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    margin-top: 3vh;
+    background-color: #2C0052;
+    border-radius: 1vw;
+    padding: 1.7vh;
+    position: absolute;
+    width: fit-content;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
     font-size: 1.2vw;
 
+}
+.jobTitle::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #2C0052 transparent;
 }
 
 .buttonsDiv{
