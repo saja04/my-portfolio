@@ -1,0 +1,16 @@
+.mainDiv {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background: rgb(37, 36, 36);
+  background-size: cover;
+  background-position: center;
+}
+.aboutMe{
+    margin-top: 8vh;
+    margin-left: 8vw;
+    display: flex;
+    /* width: 100vw; */
+    height: fit-content;
+    color: white;
+}

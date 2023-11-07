@@ -8,7 +8,7 @@
 }
 
 .jobTitle{
-    margin-left: 7vw;
+    margin-left: 7.5vw;
     color: rgb(255, 255, 255);
     display: inline-block;
     margin-top: 3vh;
@@ -42,16 +42,29 @@
     background-color: none;
     background: none;
     color: none;
-    margin-right: 3vw;
+    margin-right: 1vw;
     width: 10vw;
     border-radius: 10vw;
+    transition: .3s;
+}
+
+.curriculumButton:hover{
+    border: none;
+    background-color: none;
+    background: none;
+    color: none;
+    margin-right: 1vw;
+    width: 10vw;
+    border-radius: 10vw;
+    transition: .3s;
+    transform: scale(1.1);
 }
 
 .curriculumLink{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 3vw;
+    margin-right: 1vw;
     width: 10vw;
     height: 8vh;
 
@@ -61,16 +74,57 @@
     font-size: 1.3vw;
     background-color: #a54ff0;
     border-radius: 10vw;
+    box-shadow: 0 1vh #20202098;
+    transition: .3s;
 
+}
+.curriculumLink:hover{
+    background-color: #9e3ef1;
+   box-shadow: 0 0.5vw #202020bb;
+   transition: .3s;
+}
+
+.curriculumLink:active{
+    background-color: black;
+    transform: scale(0.9);
+    transition: .3s;
 }
 
 .mainLinks{
-    margin-right: 2vw;
-    margin-top: 1vh;
+    margin-left: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4vw;
+    height: 8vh;
+    margin-top: 1.3vh;
+    background-color: #353535;
+    border-radius: 1vw;
+    box-shadow: 0 5px rgba(39, 39, 39, 0.582);
+    transition: .3s;
 
+}
+
+.mainLinks:hover{
+    scale: 20px;
+    background-color: #474747;
+    box-shadow: 0 5px rgba(27, 27, 27, 0.185);
+    transition: .3s;
+    transform: scale(0.9);
+}
+
+.mainLinks:active{
+    background-color: white;
+    transform: scale(1);
+    transition: .3s;
 }
 
 
 .logos{
-    width: 3vw;
+    width: 2.5vw;
+}
+
+.logoHenry{
+    margin-top: 0.4vh;
+    width: 2.8vw;
 }

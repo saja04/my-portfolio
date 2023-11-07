@@ -28,8 +28,7 @@
 
 .NavLink{
     flex-direction: column;
-    margin-top: 10vh;
-    /* margin-left:2vw; */
+    margin-top: 8vh;
     text-decoration: none;
 }
 
@@ -37,9 +36,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10vh;
+    margin-top: 15vh;
 }
 
 .buttonLogo{
-    width: 1.5vw;
+    width: 1.3vw;
+    transition: .3s;
+}
+
+.buttonLogo:hover{
+    transition: .3s;
+    transform: scale(1.3);
+}
+.buttonLogo:active{
+    transition: .3s;
+    transform: scale(1.1);
+    color: black;
 }

@@ -7,7 +7,7 @@ const HomeButtons = () => {
   return (
     <div className={style.mainDiv}>
       <div className={style.buttonsDiv}>
-        <button className={style.curriculumButton} id="myButton">
+        <button className={style.curriculumButton}>
           <a
             href="https://www.linkedin.com/in/federico-saa-4ab74b297/"
             className={style.curriculumLink}
@@ -15,7 +15,6 @@ const HomeButtons = () => {
             Curriculum
           </a>
         </button>
-
         <a
           href="https://www.linkedin.com/in/federico-saa-4ab74b297/"
           className={style.mainLinks}
@@ -29,10 +28,10 @@ const HomeButtons = () => {
           href="https://www.talent.soyhenry.com/candidate/16305"
           className={style.mainLinks}
         >
-          <img src={henryLogo} alt="soy henry" className={style.logos} />
+          <img src={henryLogo} alt="soy henry" className={style.logoHenry} />
         </a>
       </div>
-      <h4 className={style.jobTitle}>Estoy Buscando Trabajo!</h4>
+      <h4 className={style.jobTitle}>Estoy Buscando Empleo!</h4>
     </div>
   );
 };
