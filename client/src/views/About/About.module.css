@@ -1,16 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
 .mainDiv {
   width: 100vw;
-  height: 100vh;
+  height: 200vh;
   display: flex;
   background: rgb(37, 36, 36);
   background-size: cover;
   background-position: center;
 }
-.aboutMe{
-    margin-top: 8vh;
-    margin-left: 8vw;
-    display: flex;
-    /* width: 100vw; */
-    height: fit-content;
-    color: white;
+
+::-webkit-scrollbar{
+  width: .5vw;
+  background: #252424;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 2vw;
+  width: .8vw;
+  background: #6e6b6b;
+}
+::-webkit-scrollbar-track{
+  width: 10vw;
+}
+
+.texts {
+  align-items: center;
+  margin-top: 5vh;
+  margin-left: 3vw;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+}
+.texts h1 {
+  font-size: 5vw;
+  font-family: "Quicksand", sans-serif;
+}
+.aboutMe {
+  display: flex;
+  width: max-content;
+  height: fit-content;
+  margin-left: 60vw;
+  margin-right: 1vw;
+  color: white;
+}
+.me {
+  display: flex;
+  height: fit-content;
+  width: max-content;
+  color: #a54ff0;
 }

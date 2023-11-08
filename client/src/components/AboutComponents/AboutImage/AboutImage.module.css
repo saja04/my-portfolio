@@ -1,11 +1,12 @@
 .mainDiv{
     display: flex;
-    /* position: relative; */
+    position: absolute;
+    left: 15vw;
+    margin-top: 25vh;
 }
 .abtMePhoto{
-    position: absolute;
-    left: 11vw;
     margin-left: 0;
-    margin-top: 30vh;
-    width: 20vw;
+    width: 25vw;
+    border: .4vw solid #460085;
+    border-radius: 1vw;
 }

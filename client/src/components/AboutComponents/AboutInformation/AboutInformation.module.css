@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+.mainDiv{
+    top: 100vh;
+    position: absolute;
+    /* margin-left: 10vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitleHard{
+    margin-top: 20vh;
+    font-family: "Quicksand", sans-serif;
+    font-size: 4.5vw;
+    right: -70vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    color: #ffff;
+}
