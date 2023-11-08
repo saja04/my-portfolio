@@ -14,11 +14,11 @@ const AboutInformation = () => {
             Habilidades <span className={style.hardText}>Duras</span>
           </h2>
           <div className={style.abilitiesContainer}>
-            <img src={nodepb} alt="node" style={{ width: 200 }} />
-            <img src={expresspb} alt="node" style={{ width: 200 }} />
-            <img src={postgresqlpb} alt="node" style={{ width: 200 }} />
-            <img src={reactpb} alt="node" style={{ width: 200 }} />
-            <img src={htmlcsspb} alt="node" style={{ width: 200 }} />
+            <img src={nodepb} alt="node" />
+            <img src={expresspb} alt="node" />
+            <img src={postgresqlpb} alt="node" />
+            <img src={reactpb} alt="node" />
+            <img src={htmlcsspb} alt="node" />
           </div>
         </div>
       </div>

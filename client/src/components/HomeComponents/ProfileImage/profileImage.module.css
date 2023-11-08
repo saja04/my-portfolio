@@ -1,6 +1,24 @@
-.profileImage{
+.profileImage1{
+    position: absolute;
     margin-top: 15vh;
     margin-left: 13vw;
     width: 27vw;
     border-radius: 100%;
+    box-shadow: 1.8vw 0 #392B44;
+}
+.profileImage2{
+    position:absolute;
+    margin-top: 15vh;
+    margin-left: 13vw;
+    width: 27vw;
+    border-radius: 100%;
+    box-shadow: 1.2vw 0 #593678;
+}
+.profileImage3{
+    position:absolute;
+    margin-top: 15vh;
+    margin-left: 13vw;
+    width: 27vw;
+    border-radius: 100%;
+    box-shadow: .6vw 0 #A54FF0;
 }
