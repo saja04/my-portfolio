@@ -7,18 +7,17 @@ import AboutInformation from "../../components/AboutComponents/AboutInformation/
 const About = () => {
   return (
     <>
-    <NavBar />
-    <div className={style.mainDiv}>
-      <div className={style.texts}>
-        <h1 className={style.aboutMe}>Acerca de</h1>
-        <h1 className={style.me}>mí</h1>
+      <NavBar />
+      <div className={style.mainDiv}>
+        <div className={style.texts}>
+          <h1 className={style.aboutMe}>Acerca de</h1>
+          <h1 className={style.me}>mí</h1>
+        </div>
+        <AboutImage />
+        <AboutBody />
+        <AboutInformation />
       </div>
-      <AboutImage />
-      <AboutBody />
-      <AboutInformation/>
-    </div>
     </>
-    
   );
 };
 

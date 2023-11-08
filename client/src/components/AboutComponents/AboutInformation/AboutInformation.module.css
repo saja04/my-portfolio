@@ -1,20 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
-.mainDiv{
-    top: 100vh;
-    position: absolute;
-    /* margin-left: 10vw; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.mainDiv {
+  top: 100vh;
+  position: absolute;
+  display: flex;
 }
 
-.subtitleHard{
-    margin-top: 20vh;
-    font-family: "Quicksand", sans-serif;
-    font-size: 4.5vw;
-    right: -72vw;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    color: #ffff;
+.hardContainer {
+  margin-top: 5vh;
+  margin-left: 20vw;
+  position: absolute;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+
+.subtitleHard {
+  margin-left: 15vw;
+  display: flex;
+  font-family: "Quicksand", sans-serif;
+  font-size: 4.5vw;
+  color: #ffff;
+}
+.hardText {
+  display: flex;
+  margin-left: 1.5vw;
+  font-family: "Quicksand", sans-serif;
+  font-size: 4.5vw;
+  color: #a54ff0;
+}
+
+.abilitiesContainer {
+    margin-top: 10vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.abilitiesContainer img {
+  margin-right: 5vw;
 }
