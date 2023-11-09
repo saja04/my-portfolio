@@ -2,7 +2,7 @@
 
 .mainDiv {
   width: 100vw;
-  height: 200vh;
+  height: 300vh;
   display: flex;
   background: rgb(37, 36, 36);
   background-size: cover;
@@ -33,6 +33,7 @@
 .texts h1 {
   font-size: 5vw;
   font-family: "Quicksand", sans-serif;
+  cursor: default;
 }
 .aboutMe {
   display: flex;
@@ -41,10 +42,12 @@
   margin-left: 60vw;
   margin-right: 1vw;
   color: white;
+  cursor: default;
 }
 .me {
   display: flex;
   height: fit-content;
   width: max-content;
   color: #a54ff0;
+  cursor: default;
 }

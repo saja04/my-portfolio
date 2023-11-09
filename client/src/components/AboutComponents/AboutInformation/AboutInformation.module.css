@@ -6,7 +6,7 @@
 }
 
 .hardContainer {
-  margin-top: 5vh;
+  margin-top: 15vh;
   margin-left: 20vw;
   position: absolute;
   display: flex;
@@ -20,6 +20,7 @@
   font-family: "Quicksand", sans-serif;
   font-size: 3vw;
   color: #ffff;
+  cursor: default;
 }
 .hardText {
   display: flex;
@@ -27,6 +28,7 @@
   font-family: "Quicksand", sans-serif;
   font-size: 3vw;
   color: #a54ff0;
+  cursor: default;
 }
 
 .abilitiesContainer {
@@ -39,4 +41,80 @@
 .abilitiesContainer img {
   margin-right: 5vw;
   width: 8vw;
+  transition: .3s;
+  cursor: default;
 }
+.abilitiesContainer img:hover{
+  transform: scale(1.05);
+  transition: .3s;
+}
+
+.softContainer{
+  margin-top: 62vh;
+  margin-left: 20vw;
+  position: absolute;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+
+.subtitleSoft{
+  margin-left: 20vw;
+  display: flex;
+  font-family: "Quicksand", sans-serif;
+  font-size: 3vw;
+  color: #ffff;
+  cursor: default;
+}
+
+.softText{
+  display: flex;
+  margin-left: 1.5vw;
+  font-family: "Quicksand", sans-serif;
+  font-size: 3vw;
+  color: #a54ff0;
+  cursor: default;
+}
+
+.sAbilitiesContainer{
+  margin-top: 1.5vw;
+  width: 70vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.sAbilitiesContainer h4{
+  margin-top: 2vw;
+  background-color: #1b1b1b;
+  border-radius: 1vw;
+  padding: 1vw;
+  margin-right: 3vw;
+  color: white;
+  font-size: 2vw;
+  font-family: "Quicksand", sans-serif;
+  box-shadow: .1vw .3vw #00000083;
+  transition: .3s;
+  cursor: default;
+}
+
+.sAbilitiesContainer h4:hover{
+  transform: scale(1.05);
+  transition: .3s;
+}
+
+.expContainer{
+  position: absolute;
+  top: 100vh;
+}
+
+.expSubtitle{
+  margin-left: 20vw;
+  display: flex;
+  font-family: "Quicksand", sans-serif;
+  font-size: 3vw;
+  color: #ffff;
+}
+
