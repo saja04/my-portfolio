@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+.mainDivExp {
+  height: 10vh;
+  margin-top: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.expTitle {
+  margin-top: 15vh;
+  margin-left: 41vw;
+  font-family: "Quicksand", sans-serif;
+  font-size: 3vw;
+  color: white;
+}
+.expTitle2 {
+  color: #a54ff0;
+}
+
+.portRedirect{
+  margin-top: 40vh;
+  margin-left: 40vw;
+  display: flex;
+
+
+}
+
+.portRedirect h2{
+  color: white;
+}

@@ -1,24 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
 .mainDiv {
-  width: 100vw;
-  height: 300vh;
+  width: 99.55vw;
+  height: 310vh;
   display: flex;
   background: rgb(37, 36, 36);
   background-size: cover;
   background-position: center;
 }
 
-::-webkit-scrollbar{
+body::-webkit-scrollbar{
+  position:fixed;
   width: .5vw;
   background: #252424;
 }
-::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb{
+  position: fixed;
   border-radius: 2vw;
-  width: .8vw;
   background: #6e6b6b;
 }
-::-webkit-scrollbar-track{
+body::-webkit-scrollbar-track{
+  position: fixed;
+  
   width: 10vw;
 }
 
