@@ -1,0 +1,35 @@
+.portPrevMainDiv {
+  position: absolute;
+  top: 200vh;
+}
+.expTitle {
+  margin-top: 15vh;
+  margin-left: 41vw;
+  font-family: "Quicksand", sans-serif;
+  font-size: 3vw;
+  color: white;
+}
+.expTitle2 {
+  color: #a54ff0;
+}
+
+.cardsContainer {
+  background-color: rgba(128, 128, 128, 0.212);
+  margin-top: 10vh;
+  margin-left: 12vw;
+  display: flex;
+  flex-direction: row;
+  padding-top: 8vw;
+  padding-bottom: 8vw;
+  padding-left: 12vw;
+  padding-right: 12vw;
+}
+.codeCarImg {
+  width: 30vw;
+  height: 30vh;
+  margin-right: 5vw;
+}
+.pokemonImg {
+  width: 20vw;
+  height: 30vh;
+}

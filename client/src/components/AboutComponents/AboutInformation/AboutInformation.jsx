@@ -5,7 +5,6 @@ import reactpb from "../../../assets/pb/reactpb.png";
 import postgresqlpb from "../../../assets/pb/postgresqlpb.png";
 import htmlcsspb from "../../../assets/pb/htmlcsspb.png";
 
-import AboutExperience from "../AboutExperience/AboutExperience";
 
 const AboutInformation = () => {
   return (
@@ -35,7 +34,6 @@ const AboutInformation = () => {
             <h4>Colaborativo</h4>
           </div>
         </div>
-        <AboutExperience/>
       </div>
     </>
   );

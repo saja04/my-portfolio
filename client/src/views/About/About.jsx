@@ -3,6 +3,7 @@ import style from "./About.module.css";
 import AboutBody from "../../components/AboutComponents/AboutBody/AboutBody";
 import AboutImage from "../../components/AboutComponents/AboutImage/AboutImage";
 import AboutInformation from "../../components/AboutComponents/AboutInformation/AboutInformation";
+import PortfolioPreview from "../../components/AboutComponents/PortfolioPreview/PortfolioPreview";
 
 const About = () => {
   return (
@@ -16,6 +17,7 @@ const About = () => {
         <AboutImage />
         <AboutBody />
         <AboutInformation />
+        <PortfolioPreview />
       </div>
     </>
   );
