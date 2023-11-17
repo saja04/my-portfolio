@@ -1,10 +1,13 @@
 .portPrevMainDiv {
   position: absolute;
   top: 200vh;
+  width: 89vw;
+  margin-left: 10vw;
 }
 .expTitle {
+  width: fit-content;
   margin-top: 15vh;
-  margin-left: 41vw;
+  margin-left: 31vw;
   font-family: "Quicksand", sans-serif;
   font-size: 3vw;
   color: white;
@@ -14,22 +17,106 @@
 }
 
 .cardsContainer {
-  background-color: rgba(128, 128, 128, 0.212);
+  background-color: rgba(83, 83, 83, 0.986);
   margin-top: 10vh;
-  margin-left: 12vw;
+  margin-left:11vw;
   display: flex;
   flex-direction: row;
-  padding-top: 8vw;
-  padding-bottom: 8vw;
-  padding-left: 12vw;
-  padding-right: 12vw;
+  padding-top: 10vw;
+  padding-bottom: 5vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  border-radius: 1vw;
+  width: 70vw;
+  transition: 0.3s;
+}
+.imagesContainer{
+  margin-left: 2vw;
+  width: fit-content;
+  /* display: flex; */
 }
 .codeCarImg {
+  border: 0.2vw solid rgb(95, 95, 95);
+  border-radius: 2vw;
   width: 30vw;
   height: 30vh;
   margin-right: 5vw;
 }
 .pokemonImg {
+  border: 0.2vw solid rgb(95, 95, 95);
+  border-radius: 2vw;
   width: 20vw;
   height: 30vh;
 }
+.goToTitle {
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  position: absolute;
+  top: 37vh;
+  left: 36vw;
+  font-size: 3vw;
+}
+.portfolioNavLink {
+  position: absolute;
+  width: 59vw;
+  height: 30vh;
+  transition: 0.3s;
+}
+.title2 {
+  font-family: "Quicksand", sans-serif;
+  color: #a54ff0;
+}
+.goToPortContainer {
+  position: absolute;
+  right: 16vw;
+  top: 50vh;
+  width: 60vw;
+  height: 35vh;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(243, 232, 253, 0) 11%,
+    rgba(165, 79, 240, 1) 91%,
+    rgba(165, 79, 240, 1) 100%
+  );
+  border-radius: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.goToPortContainer:hover {
+  transform: translateX(1vw);
+  transition: 0.3s;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(243, 232, 253, 0) 11%,
+    rgb(181, 114, 240) 91%,
+    rgb(175, 107, 235) 100%
+  );
+
+}
+.goToArrow {
+  position: absolute;
+  right: 1vw;
+  width: 15vw;
+}
+
+.carCodeText{
+  position: absolute;
+  margin-left: 1vw;
+  margin-top: 1vh;
+  color: #A54FF0;
+  font-size: 2vw;
+  width: fit-content;
+}
+.pokemonText{
+  position:absolute;
+  margin-left: 1vw;
+  margin-top: 1vh;
+  color: white;
+  font-size: 2vw;
+  width: fit-content;
+}
+
