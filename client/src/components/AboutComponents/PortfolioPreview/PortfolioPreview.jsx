@@ -1,7 +1,7 @@
 import style from "./PortfolioPreview.module.css";
 import codeCar from "../../../assets/codecar.png";
 import pokemon from "../../../assets/pokemon.png";
-import arrow from "../../../assets/arrow1.png";
+import arrow from "../../../assets/arrow2.png";
 import { NavLink } from "react-router-dom";
 
 const PortfolioPreview = () => {
