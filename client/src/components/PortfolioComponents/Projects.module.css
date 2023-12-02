@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+.projectsMainDiv {
+  position: absolute;
+  left: 9vw;
+  width: 90.55vw;
+  height: 123vh;
+}
+.projectsDiv {
+  padding: 1.5vw;
+  border-radius: .3vw;
+  width: fit-content;
+  background: radial-gradient(circle, rgba(71,71,71,1) 0%, rgba(37,36,36,1) 100%);
+  margin-top: 25vh;
+  margin-left: 7vw;
+  margin-right: 5vw;
+  margin-bottom: 5vh;
+  display: grid;
+  grid-template-columns: repeat(2, 35vw);
+  gap: 5vh;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  transition: .3s;
+}
+.projectsDiv:hover{
+  transition: .3s;
+  transform: scale(1.01);
+  background: radial-gradient(circle, rgba(80,80,80,1) 0%, rgba(37,36,36,1) 100%);
+}
+
+
+.titles {
+  font-family: "Quicksand", sans-serif;
+  font-size: 3.5vw;
+  color: #A54FF0
+}
+.projectCarCode {
+  border: .3vw solid black;
+  border-radius: 1vw;
+  background-image: url("../../assets/carCodePage.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35vw;
+  height: 42vh;
+}
+.projectCarCode:hover{
+  background: rgba(255, 255, 255, 0.13);
+}
+.projectPortfolio {
+  border: .3vw solid black;
+  border-radius: 1vw;
+  background-image: url("../../assets/portfolio.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35vw;
+  height: 42vh;
+}
+.projectPokedex {
+  border: .3vw solid black;
+  border-radius: 1vw;
+  background-image: url("../../assets/pokedex.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35vw;
+  height: 42vh;
+}
+.projectRyM {
+  border: .3vw solid black;
+  border-radius: 1vw;
+  background-image: url("../../assets/rym.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35vw;
+  height: 42vh;
+}

@@ -19,7 +19,7 @@ const NavBar = () => {
         <NavLink to="/about" className={style.NavLink}>
           <img src={profile} alt="profile-info" className={style.buttonLogo} />
         </NavLink>
-        <NavLink to="/contact" className={style.NavLink}>
+        <NavLink to="/portfolio" className={style.NavLink}>
           <img src={briefcase} alt="portfolio" className={style.buttonLogo} />
         </NavLink>
         <NavLink to="/contact" className={style.NavLink}>
