@@ -39,8 +39,41 @@
 }
 
 .title2{ 
-  margin-left: 5vw;
-  font-size: 2vw;
-  margin-top: 25vh;
-  color: white;
+  margin-top: 5vh;
+  margin-left: 3vw;
+  color: #A54FF0;
+}
+.technologiesContainer{
+  margin-left: 2.5vw;
+  margin-top: 20vh;
+  background-color: #58555560;
+  width: 27vw;
+  height: 75vh;
+  border-radius: 2vw;
+}
+.functionalitiesContainer{
+  margin-left: 2.5vw;
+  margin-top: 20vh;
+  background-color: #58555560;
+  width: 27vw;
+  height: 75vh;
+  border-radius: 2vw;
+}
+.participationsContainer{
+  margin-left: 2.5vw;
+  margin-top: 20vh;
+  background-color: #58555560;
+  width: 27vw;
+  height: 75vh;
+  border-radius: 2vw;
+}
+.title3{ 
+  margin-top: 5vh;
+  margin-left: 6vw;
+  color: #A54FF0;
+}
+.title4{ 
+  margin-top: 5vh;
+  margin-left: 4vw;
+  color: #A54FF0;
 }
