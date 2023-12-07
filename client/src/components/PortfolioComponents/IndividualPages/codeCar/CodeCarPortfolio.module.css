@@ -1,8 +1,46 @@
-.mainDivCodeCar{
-    position: absolute;
-    left: 9vw;
-    width: 90.55vw;
-    height: 200vh;
-    background-color: #252424;
-    display: flex;
+.mainDivCodeCar {
+  position: absolute;
+  left: 9vw;
+  width: 90.55vw;
+  height: 200vh;
+  background-color: #252424;
+  display: flex;
+}
+
+.navLinkTitle1{
+  position: absolute;
+  margin-top: 2vh;
+    margin-left: 32vw;
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    transition: .3s;
+
+}
+.navLinkTitle1:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.navLinkTitle1:active{
+    transform: scale(0.9);
+    transition: .3s;
+}
+
+.title1 {
+  font-size: 5vw;
+  color: white;
+}
+.span1 {
+  color: #a54ff0;
+}
+.redirectImg {
+  width: 5vw;
+}
+
+.title2{ 
+  margin-left: 5vw;
+  font-size: 2vw;
+  margin-top: 25vh;
+  color: white;
 }

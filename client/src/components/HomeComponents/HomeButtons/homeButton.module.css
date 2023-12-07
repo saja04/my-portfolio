@@ -25,10 +25,11 @@
 .jobTitle::before {
     content: "";
     position: absolute;
-    top: -20px;
+    width: 1vw;
+    top: -2vh;
     left: 50%;
-    margin-left: -10px;
-    border-width: 10px;
+    margin-left: -.5vw;
+    border-width: .5vw;
     border-style: solid;
     border-color: transparent transparent #2C0052 transparent;
 }
