@@ -7,24 +7,23 @@
   display: flex;
 }
 
-.navLinkTitle1{
+.navLinkTitle1 {
   position: absolute;
-  margin-top: 2vh;
-    margin-left: 32vw;
-    text-decoration: none;
-    width: fit-content;
-    height: fit-content;
-    transition: .3s;
-
+  margin-top: 4vh;
+  margin-left: 34vw;
+  text-decoration: none;
+  width: fit-content;
+  height: fit-content;
+  transition: 0.3s;
 }
-.navLinkTitle1:hover{
-    transform: scale(1.1);
-    transition: .3s;
+.navLinkTitle1:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
-.navLinkTitle1:active{
-    transform: scale(0.9);
-    transition: .3s;
+.navLinkTitle1:active {
+  transform: scale(0.9);
+  transition: 0.3s;
 }
 
 .title1 {
@@ -38,42 +37,45 @@
   width: 5vw;
 }
 
-.title2{ 
+.title2 {
+  margin-top: 5vh;
+  margin-left: 2.5vw;
+  color: #a54ff0;
+  font-size: 2.3vw;
+}
+.technologiesContainer {
+  margin-left: 2.5vw;
+  margin-top: 25vh;
+  background-color: #58555560;
+  width: 27vw;
+  height: 70vh;
+  border-radius: 2vw;
+}
+.functionalitiesContainer {
+  margin-left: 2.5vw;
+  margin-top: 25vh;
+  background-color: #58555560;
+  width: 27vw;
+  height: 70vh;
+  border-radius: 2vw;
+}
+.participationsContainer {
+  margin-left: 2.5vw;
+  margin-top: 25vh;
+  background-color: #58555560;
+  width: 27vw;
+  height: 70vh;
+  border-radius: 2vw;
+}
+.title3 {
+  margin-top: 5vh;
+  margin-left: 5vw;
+  color: #a54ff0;
+  font-size: 2.5vw;
+}
+.title4 {
   margin-top: 5vh;
   margin-left: 3vw;
-  color: #A54FF0;
-}
-.technologiesContainer{
-  margin-left: 2.5vw;
-  margin-top: 20vh;
-  background-color: #58555560;
-  width: 27vw;
-  height: 75vh;
-  border-radius: 2vw;
-}
-.functionalitiesContainer{
-  margin-left: 2.5vw;
-  margin-top: 20vh;
-  background-color: #58555560;
-  width: 27vw;
-  height: 75vh;
-  border-radius: 2vw;
-}
-.participationsContainer{
-  margin-left: 2.5vw;
-  margin-top: 20vh;
-  background-color: #58555560;
-  width: 27vw;
-  height: 75vh;
-  border-radius: 2vw;
-}
-.title3{ 
-  margin-top: 5vh;
-  margin-left: 6vw;
-  color: #A54FF0;
-}
-.title4{ 
-  margin-top: 5vh;
-  margin-left: 4vw;
-  color: #A54FF0;
+  color: #a54ff0;
+  font-size: 2.5vw;
 }
