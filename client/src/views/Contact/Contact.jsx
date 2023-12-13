@@ -2,6 +2,7 @@ import style from "./Contact.module.css";
 import NavBar from "../../components/NavBar/navBar";
 import { NavLink } from "react-router-dom";
 import redirectLogo from "../../assets/redirect-icon.png";
+import ContactForm from "../../components/ContactComponents/ContactForm/ContactForm";
 
 const Contact = () => {
   return (
@@ -17,7 +18,7 @@ const Contact = () => {
           Escribeme por <span className={style.contactSpan1}>WhatsApp!</span> {' '}
           <img src={redirectLogo} alt="my whatsapp" className={style.redirectImg}/>
         </NavLink>
-        
+        <ContactForm/>
       </div>
     </div>
   );

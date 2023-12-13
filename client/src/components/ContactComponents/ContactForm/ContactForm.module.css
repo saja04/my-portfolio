@@ -1,0 +1,48 @@
+.contactFormMainDiv {
+  position: absolute;
+}
+.contactFormTitle1 {
+  position: absolute;
+  color: white;
+}
+.contactForm {
+  margin-left: 5vw;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+}
+.contactFormLabels {
+  color: white;
+}
+.statusSpan1True {
+  font-size: 1.5vw;
+  color: white;
+  position: fixed;
+  top: 5vh;
+  right: 5vw;
+  background-color: rgba(38, 138, 25, 0.644);
+  width: 15vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .5vw;
+  padding: 2vh;
+  transition: .3s;
+}
+.statusSpan1False {
+    font-size: 1.5vw;
+    color: white;
+    position: fixed;
+    top: 5vh;
+    right: 5vw;
+    background-color: rgba(138, 25, 25, 0.644);
+    width: 15vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5vw;
+    padding: 2vh;
+    transition: .3s;
+}
