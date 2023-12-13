@@ -17,6 +17,7 @@ const Contact = () => {
           Escribeme por <span className={style.contactSpan1}>WhatsApp!</span> {' '}
           <img src={redirectLogo} alt="my whatsapp" className={style.redirectImg}/>
         </NavLink>
+        
       </div>
     </div>
   );
