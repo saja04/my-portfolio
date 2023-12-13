@@ -5,22 +5,22 @@ const Projects = () => {
   return (
     <div className={style.projectsMainDiv}>
       <div className={style.projectsDiv}>
-        <NavLink to="./carcode" className={style.links}>
+        <NavLink to="./carcode" target="_blank" className={style.links}>
           <div className={style.projectCarCode}>
             <h2 className={style.titles}>carCode</h2>
           </div>
         </NavLink>
-        <NavLink to="./portfolio" className={style.links}>
+        <NavLink to="https://github.com/saja04/my-portfolio" target="_blank" className={style.links}>
           <div className={style.projectPortfolio}>
             <h2 className={style.titles}>Portfolio</h2>
           </div>
         </NavLink>
-        <NavLink to="./pokedex" className={style.links}>
+        <NavLink to="https://github.com/saja04/pokemon-PI" target="_blank" className={style.links}>
           <div className={style.projectPokedex}>
             <h2 className={style.titles}>The Pokedex</h2>
           </div>
         </NavLink>
-        <NavLink to="./rym" className={style.links}>
+        <NavLink to="https://github.com/saja04/rick-and-morty" target="_blank" className={style.links}>
           <div className={style.projectRyM}>
             <h2 className={style.titles}>Rick & Morty</h2>
           </div>

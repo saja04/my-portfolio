@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 .functionalitiesMainDiv{
     margin-top: 5vh;
     margin-left: 4vw;
@@ -5,4 +6,6 @@
 .functionalitiesTitle1{
   color: white;
   font-size: 1.5vw;
+  cursor: default;
+  font-family: "Quicksand", sans-serif;
 }

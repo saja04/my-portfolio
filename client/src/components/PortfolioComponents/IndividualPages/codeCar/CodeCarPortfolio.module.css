@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 .mainDivCodeCar {
   position: absolute;
   left: 9vw;
@@ -15,6 +16,7 @@
   width: fit-content;
   height: fit-content;
   transition: 0.3s;
+  font-family: "Quicksand", sans-serif;
 }
 .navLinkTitle1:hover {
   transform: scale(1.1);
@@ -29,6 +31,8 @@
 .title1 {
   font-size: 5vw;
   color: white;
+  font-family: "Quicksand", sans-serif;
+  
 }
 .span1 {
   color: #a54ff0;
@@ -42,6 +46,8 @@
   margin-left: 2.5vw;
   color: #a54ff0;
   font-size: 2.3vw;
+  cursor: default;
+  font-family: "Quicksand", sans-serif;
 }
 .technologiesContainer {
   margin-left: 2.5vw;
@@ -50,7 +56,13 @@
   width: 27vw;
   height: 70vh;
   border-radius: 2vw;
+  transition: .3s;
 }
+.technologiesContainer:hover{
+  transform: scale(1.02);
+  transition: .3s;
+}
+
 .functionalitiesContainer {
   margin-left: 2.5vw;
   margin-top: 25vh;
@@ -58,7 +70,13 @@
   width: 27vw;
   height: 70vh;
   border-radius: 2vw;
+  transition: .3s;
 }
+.functionalitiesContainer:hover{
+  transform: scale(1.02);
+  transition: .3s;
+}
+
 .participationsContainer {
   margin-left: 2.5vw;
   margin-top: 25vh;
@@ -66,16 +84,55 @@
   width: 27vw;
   height: 70vh;
   border-radius: 2vw;
+  transition: .3s;
 }
+.participationsContainer:hover{
+  transform: scale(1.02);
+  transition: .3s;
+}
+
 .title3 {
   margin-top: 5vh;
   margin-left: 5vw;
   color: #a54ff0;
   font-size: 2.5vw;
+  cursor: default;
+  font-family: "Quicksand", sans-serif;
 }
 .title4 {
   margin-top: 5vh;
   margin-left: 3vw;
   color: #a54ff0;
   font-size: 2.5vw;
+  cursor: default;
+  font-family: "Quicksand", sans-serif;
+}
+.carCodeVideo{
+  width: 60vw;
+  height: 75vh;
+  position: absolute;
+  margin-top: 122vh;
+  margin-left: 25vw;
+  border-radius: 1vw;
+  transition: .3s;
+}
+/* .carCodeVideo:hover{
+  transform: scale(1.02);
+  transition: .3s;
+} */
+.carCodeVideo:active{
+  transform: scale(0.98);
+  transition: .3s;
+}
+.title5{
+  position: absolute;
+  color: white;
+  margin-top: 105vh;
+  margin-left: 29vw;
+  cursor: default;
+  font-size: 4vw;
+  font-family: "Quicksand", sans-serif;
+}
+.span2{
+  color: #a54ff0;
 }

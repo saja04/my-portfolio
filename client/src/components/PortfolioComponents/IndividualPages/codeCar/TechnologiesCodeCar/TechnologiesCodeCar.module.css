@@ -1,8 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
 .technologiesMainDiv {
     margin-top: 5vh;
     margin-left: 4vw;
 }
 .technologiesTitle1 {
   color: white;
+  cursor: default;
   font-size: 1.5vw;
+  font-family: "Quicksand", sans-serif;
 }

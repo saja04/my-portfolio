@@ -39,6 +39,16 @@ const CodeCarPortfolio = () => {
           <MyParticipationsCarCode />
         </div>
       </div>
+
+      <h2 className={style.title5}>Recorrido por la <span className={style.span2}>pagina web</span></h2>
+
+      <iframe
+        src="https://www.youtube.com/embed/KmPVvh21pFQ?si=k5pft4YN9XY9QJfN"
+        title="carCode Video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        className={style.carCodeVideo}
+        allowfullscreen
+      ></iframe>
     </div>
   );
 };

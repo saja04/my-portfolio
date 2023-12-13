@@ -40,7 +40,7 @@
 .titles {
   font-family: "Quicksand", sans-serif;
   font-size: 3.5vw;
-  -webkit-text-stroke: 2px #ba80ed;
+  -webkit-text-stroke: 1px #ac5ff0;
   color: #a54ff0;
 }
 .projectCarCode {
