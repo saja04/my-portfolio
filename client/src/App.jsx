@@ -12,7 +12,6 @@ function App() {
   useEffect(() => {
     const initializeServer = async () => {
       const response = await axios(`${SERVER_URL}/`);
-      console.log(response.data);
     };
     initializeServer()
   }, []);
