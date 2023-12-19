@@ -25,6 +25,6 @@ server.use((req, res, next) => {
 
 server.use("/", router);
 
-server.listen(3001, () => {
+server.listen(443, () => {
   console.log("server up and listening on port 3001");
 });

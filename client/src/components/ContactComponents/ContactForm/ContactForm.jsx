@@ -161,6 +161,19 @@ const ContactForm = () => {
       toast.error(
         "Error al enviar email, aguarda un momento y vuelve a intentarlo"
       );
+      setContactForm({
+        name: "",
+        mail: "",
+        subject: "",
+        message: "",
+      });
+      setFormErrors({
+        name: 1,
+        mail: 1,
+        subject: 1,
+        message: 1,
+      });
+      setSubmittedForm(false);
     }
   };
   const errorVerification = () => {

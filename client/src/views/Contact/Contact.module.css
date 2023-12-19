@@ -22,6 +22,11 @@
   margin-top: 70vh;
   margin-left: 55vw;
   font-family: "Quicksand", sans-serif;
+  transition: .3s;
+}
+.whatsappLink:hover{
+  transform: scale(1.1);
+  transition: .3s;
 }
 .redirectImg {
   width: 2.5vw;
