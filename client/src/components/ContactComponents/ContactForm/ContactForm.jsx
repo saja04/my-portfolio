@@ -17,7 +17,6 @@ const ContactForm = () => {
     subject: 1,
     message: 1,
   });
-  const [messageLength, setMessageLength] = useState('0')
   const [submittedForm, setSubmittedForm] = useState(null);
 
   const handleInputsChange = (e) => {
@@ -176,7 +175,6 @@ const ContactForm = () => {
   return (
     <div className={style.contactFormMainDiv}>
       <Toaster />
-      <h2 className={style.contactFormTitle1}>Mandame un mensaje</h2>
       <form className={style.contactForm} onSubmit={handleSubmit}>
         <label className={style.contactFormLabels}>
           Tu nombre completo
@@ -204,7 +202,7 @@ const ContactForm = () => {
               : formErrors.mail === 2
               ? " max. 100*"
               : formErrors.mail === 3
-              ? "* mail invalido!"
+              ? " correo invalido*"
               : null}
           </span>
         </label>
@@ -250,21 +248,17 @@ const ContactForm = () => {
           name="message"
           onChange={handleInputsChange}
           className={style.formInput2}
-          rows="4" 
+          rows="4"
           cols="50"
         />
         {submittedForm ? (
-          <button type="button" className={style.trueButton}>
-            ...
-          </button>
+          <span className={style.falseButton}>...</span>
         ) : errorVerification() ? (
           <button type="submit" className={style.trueButton}>
             Enviar
           </button>
         ) : (
-          <button type="button" className={style.falseButton}>
-            Enviar
-          </button>
+          <span className={style.falseButton}>Enviar</span>
         )}
       </form>
     </div>

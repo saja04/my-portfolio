@@ -4,12 +4,13 @@
 }
 .contactFormTitle1 {
   font-family: 'Quicksand', sans-serif;
+  margin-left: 5vw;
   position: absolute;
   color: white;
 }
 .contactForm {
   margin-left: 5vw;
-  margin-top: 10vh;
+  margin-top: 5vh;
   display: flex;
   flex-direction: column;
 }
@@ -22,6 +23,8 @@
   color: white;
   font-family: 'Quicksand', sans-serif;
   padding: 0.5vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
   vertical-align: text-top;
   text-align: left;
   font-size: 1vw;
@@ -31,17 +34,24 @@
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  border: none;
+  border-radius: .5vw;
 }
 .formInput2 {
   color: white;
   background-color: #494949;
   font-family: 'Quicksand', sans-serif;
+  padding-left: 1vw;
+  padding-right: 1vw;
   padding: 1vh;
   text-align: left;
   font-size: 1vw;
   width: 40vw;
   height: 25vh;
   resize: none;
+  border: none;
+  border-radius: .5vw;
+  margin-bottom: 3vh;
 }
 .formInput2::-webkit-scrollbar {
   width: .5vw;
@@ -87,10 +97,45 @@
   transition: 0.3s;
 }
 .trueButton {
-  cursor: cell;
-  background-color: #a54ff0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  margin-left: 25vw;
+  width: 15vw;
+  height: 8vh;
+  cursor: pointer;
+  border-radius: 1vw;
+  font-size: 1.2vw;
+  border: .2vw solid rgb(175, 123, 221);
+  background: rgb(172,98,238);
+  background: linear-gradient(145deg, rgba(172,98,238,1) 0%, rgba(187,131,237,1) 100%);
+  transition: .3s;
+}
+.trueButton:hover{
+  transform: scale(1.1);
+  transition: .3s;
+}
+.trueButton:active{
+  transform: scale(0.9);
+  transition: .3s;
 }
 .falseButton {
-  cursor: cell;
-  background-color: #b4a2c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Quicksand', sans-serif;
+  margin-left: 25vw;
+  width: 15vw;
+  height: 8vh;
+  cursor:not-allowed;
+  border-radius: 1vw;
+  font-size: 1.2vw;
+  border: none;
+  color: #696969;
+  background: rgb(180,162,196);
+  appearance: none;
+  -webkit-appearance: none;
+  transition: .3s;
 }
