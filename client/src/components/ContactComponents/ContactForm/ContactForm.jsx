@@ -17,220 +17,123 @@ const ContactForm = () => {
     subject: 1,
     message: 1,
   });
-
-  // const formValidation = () => {
-  //   if (contactForm.name.length > 0 && contactForm.name.length <= 50) {
-  //     setFormErrors(prevState => {
-  //       const newObj = { ...prevState };
-  //       newObj.name = 0;
-  //       return newObj;
-  //     });
-  //     console.log(formErrors);
-  //   }
-  //   // if (contactForm.name.length == 0) {
-  //   //   setFormErrors((prev) => {
-  //   //     const newObj = { ...prev };
-  //   //     newObj.name = 1;
-  //   //     return newObj;
-  //   //   });
-  //   // }
-  //   if (contactForm.name.length > 50) {
-  //     setFormErrors({
-  //       ...formErrors,
-  //       name: 2,
-  //     });
-  //   }
-  //   if (contactForm.mail.length === 0) {
-  //     setFormErrors({
-  //       ...formErrors,
-  //       mail: 1,
-  //     });
-  //   }
-  //   if (contactForm.mail.length > 0) {
-  //     setFormErrors({
-  //       ...formErrors,
-  //       mail: 0,
-  //     });
-  //   }
-  //   const check = /^[^\s@]{1,100}@[^\s@]{1,50}\.[^\s@]{1,20}$/.test(
-  //     contactForm.mail
-  //   );
-  //   if(contactForm.mail !== 0 && !check){
-  //     setFormErrors({
-  //       ...formErrors,
-  //       mail: 2,
-  //     });
-  //   }
-  //   if (check) {
-  //     setFormErrors({
-  //       ...formErrors,
-  //       mail: 0,
-  //     });
-  //   }
-  //   if (contactForm.subject.length === 0) {
-  //     setFormErrors({
-  //       ...formErrors,
-  //       subject: 1,
-  //     });
-  //   }
-  //   if (contactForm.subject.length > 0 && contactForm.subject.length >= 100) {
-  //     setFormErrors({
-  //       ...formErrors,
-  //       subject: 0,
-  //     });
-  //   }
-  //   if (contactForm.subject.length > 100) {
-  //     setFormErrors({
-  //       ...formErrors,
-  //       subject: 2,
-  //     });
-  //   }
-  //   if (contactForm.message.length === 0) {
-  //     setFormErrors({
-  //       ...formErrors,
-  //       message: 1,
-  //     });
-  //   }
-  //   if (contactForm.message.length > 0 && contactForm.message.length <= 750) {
-  //     setFormErrors({
-  //       ...formErrors,
-  //       message: 0,
-  //     });
-  //   }
-  //   if (contactForm.message.length > 750)
-  //     setFormErrors({
-  //       ...formErrors,
-  //       message: 2,
-  //     });
-  //   console.log(formErrors);
-  // };
+  const [messageLength, setMessageLength] = useState('0')
+  const [submittedForm, setSubmittedForm] = useState(null);
 
   const handleInputsChange = (e) => {
     setContactForm({
       ...contactForm,
       [e.target.name]: e.target.value,
     });
-    console.log(contactForm.subject.length);
     // NAME ERRORS
-    if (contactForm.name.length <= 50 && contactForm.name.length >= 3) {
-      setFormErrors((prevState) => {
-        const newObj = { ...prevState };
-        ``;
-        newObj.name = 0;
-        return newObj;
-      });
+    if (e.target.name === "name") {
+      if (e.target.value.length <= 50 && e.target.value.length >= 3) {
+        setFormErrors((prevState) => {
+          const newObj = { ...prevState };
+          ``;
+          newObj.name = 0;
+          return newObj;
+        });
+      } else if (e.target.value.length < 3) {
+        setFormErrors((prevState) => {
+          const newObj = { ...prevState };
+          newObj.name = 1;
+          return newObj;
+        });
+      } else if (e.target.value.length > 50) {
+        setFormErrors((prevState) => {
+          const newObj = { ...prevState };
+          newObj.name = 2;
+          return newObj;
+        });
+      }
     }
-    if (contactForm.name.length < 2) {
-      setFormErrors((prevState) => {
-        const newObj = { ...prevState };
-        newObj.name = 1;
-        return newObj;
-      });
-    } else if (contactForm.name.length - 1 === 1) {
-      setFormErrors((prevState) => {
-        const newObj = { ...prevState };
-        ``;
-        newObj.name = 1;
-        return newObj;
-      });
-    } else if (contactForm.name.length > 50) {
-      setFormErrors((prevState) => {
-        const newObj = { ...prevState };
-        newObj.name = 2;
-        return newObj;
-      });
-    }
-    // MAIL ERRORS
-    const check = /^[^\s@]{1,100}@[^\s@]{1,50}\.[^\s@]{1,20}$/.test(
-      contactForm.mail
-    );
-    if (contactForm.mail.length === 0) {
-      setFormErrors((prevState) => {
-        const newObj = { ...prevState };
-        newObj.mail = 1;
-        return newObj;
-      });
-    } else if (contactForm.mail.length > 75) {
-      setFormErrors((prevState) => {
-        const newObj = { ...prevState };
-        newObj.mail = 2;
-        return newObj;
-      });
-    } else if (!check && contactForm.mail.length > 0) {
-      setFormErrors((prevState) => {
-        const newObj = { ...prevState };
-        newObj.mail = 3;
-        return newObj;
-      });
-    } else if (
-      check &&
-      contactForm.mail.length <= 75 &&
-      contactForm.mail.length > 0
-    ) {
-      setFormErrors((prevState) => {
-        const newObj = { ...prevState };
-        newObj.mail = 0;
-        return newObj;
-      });
+    //EMAIL ERRORS
+    if (e.target.name === "mail") {
+      const check = /^[^\s@]{1,100}@[^\s@]{1,50}\.[^\s@]{1,20}$/.test(
+        e.target.value
+      );
+      if (e.target.value.length === 0) {
+        setFormErrors((prevState) => {
+          const newObj = { ...prevState };
+          newObj.mail = 1;
+          return newObj;
+        });
+      } else if (e.target.value.length > 100) {
+        setFormErrors((prevState) => {
+          const newObj = { ...prevState };
+          newObj.mail = 2;
+          return newObj;
+        });
+      } else if (!check && e.target.value.length > 0) {
+        setFormErrors((prevState) => {
+          const newObj = { ...prevState };
+          newObj.mail = 3;
+          return newObj;
+        });
+      } else if (
+        check &&
+        e.target.value.length <= 100 &&
+        e.target.value.length > 0
+      ) {
+        setFormErrors((prevState) => {
+          const newObj = { ...prevState };
+          newObj.mail = 0;
+          return newObj;
+        });
+      }
     }
 
     // SUBJECT ERRORS
-    if (contactForm.subject.length <= 1) {
-      setFormErrors((prevState) => {
-        const newObj = { ...prevState };
-        newObj.subject = 1;
-        return newObj;
-      });
-    } else if (contactForm.subject.length - 2 === 1) {
-      setFormErrors((prevState) => {
-        const newObj = { ...prevState };
-        newObj.subject = 1;
-        return newObj;
-      });
-    } else if (contactForm.subject.length > 75) {
-      setFormErrors((prevState) => {
-        const newObj = { ...prevState };
-        newObj.subject = 2;
-        return newObj;
-      });
-    } else if (
-      contactForm.subject.length <= 75 &&
-      contactForm.subject.length > 0
-    ) {
-      setFormErrors((prevState) => {
-        const newObj = { ...prevState };
-        newObj.subject = 0;
-        return newObj;
-      });
+    if (e.target.name === "subject") {
+      if (e.target.value.length <= 4) {
+        setFormErrors((prevState) => {
+          const newObj = { ...prevState };
+          newObj.subject = 1;
+          return newObj;
+        });
+      } else if (e.target.value.length > 75) {
+        setFormErrors((prevState) => {
+          const newObj = { ...prevState };
+          newObj.subject = 2;
+          return newObj;
+        });
+      } else if (e.target.value.length <= 75 && e.target.value.length > 4) {
+        setFormErrors((prevState) => {
+          const newObj = { ...prevState };
+          newObj.subject = 0;
+          return newObj;
+        });
+      }
     }
+
     //MESSAGE ERROR
-    if (contactForm.message.length === 0) {
-      setFormErrors((prevState) => {
-        const newObj = { ...prevState };
-        newObj.message = 1;
-        return newObj;
-      });
-    } else if (contactForm.message.length > 750) {
-      setFormErrors((prevState) => {
-        const newObj = { ...prevState };
-        newObj.message = 2;
-        return newObj;
-      });
-    } else if (
-      contactForm.message.length <= 750 &&
-      contactForm.message.length > 0
-    ) {
-      setFormErrors((prevState) => {
-        const newObj = { ...prevState };
-        newObj.message = 0;
-        return newObj;
-      });
+    if (e.target.name === "message") {
+      if (e.target.value.length <= 10) {
+        setFormErrors((prevState) => {
+          const newObj = { ...prevState };
+          newObj.message = 1;
+          return newObj;
+        });
+      } else if (e.target.value.length > 1000) {
+        setFormErrors((prevState) => {
+          const newObj = { ...prevState };
+          newObj.message = 2;
+          return newObj;
+        });
+      } else if (e.target.value.length <= 1000 && e.target.value.length > 10) {
+        setFormErrors((prevState) => {
+          const newObj = { ...prevState };
+          newObj.message = 0;
+          return newObj;
+        });
+      }
     }
-    console.log(formErrors);
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setSubmittedForm(true);
     try {
       const response = await axios.post(`${SERVER_URL}/sendContactEmail`, {
         userName: contactForm.name,
@@ -245,23 +148,44 @@ const ContactForm = () => {
           subject: "",
           message: "",
         });
+        setFormErrors({
+          name: 1,
+          mail: 1,
+          subject: 1,
+          message: 1,
+        });
         toast.success("Mensaje enviado");
       }
+      setSubmittedForm(false);
     } catch (error) {
       console.log(error.message);
-      toast.error("Error al enviar email");
+      toast.error(
+        "Error al enviar email, aguarda un momento y vuelve a intentarlo"
+      );
     }
+  };
+  const errorVerification = () => {
+    const validator = [];
+    for (let eachError in formErrors) {
+      validator.push(formErrors[eachError]);
+    }
+    if (validator.includes(1 || 2 || 3)) return false;
+    else return true;
   };
 
   return (
     <div className={style.contactFormMainDiv}>
       <Toaster />
-      <h2 className={style.contactFormTitle1}>Mandame un lol</h2>
+      <h2 className={style.contactFormTitle1}>Mandame un mensaje</h2>
       <form className={style.contactForm} onSubmit={handleSubmit}>
         <label className={style.contactFormLabels}>
           Tu nombre completo
-          <span className={style.contactFormLabels}>
-            {formErrors.name === 1 ? "*" : null}
+          <span className={style.errorFormSpan}>
+            {formErrors.name === 1
+              ? "*"
+              : formErrors.name === 2
+              ? " max. 50*"
+              : null}
           </span>
         </label>
         <input
@@ -269,12 +193,19 @@ const ContactForm = () => {
           value={contactForm.name}
           name="name"
           onChange={handleInputsChange}
+          className={style.formInput1}
         />
 
         <label className={style.contactFormLabels}>
-          Tu direccion de correo electronico
-          <span className={style.contactFormLabels}>
-            {formErrors.mail === 1 ? "*" : formErrors.mail === 2 ? "*" : formErrors.mail === 3 ? "*" : null}
+          Correo electronico
+          <span className={style.errorFormSpan}>
+            {formErrors.mail === 1
+              ? "*"
+              : formErrors.mail === 2
+              ? " max. 100*"
+              : formErrors.mail === 3
+              ? "* mail invalido!"
+              : null}
           </span>
         </label>
         <input
@@ -282,27 +213,59 @@ const ContactForm = () => {
           value={contactForm.mail}
           name="mail"
           onChange={handleInputsChange}
+          className={style.formInput1}
         />
 
         <label className={style.contactFormLabels}>
           Asunto
-          {formErrors.subject === 1 ? "*" : null}
-          </label>
+          <span className={style.errorFormSpan}>
+            {formErrors.subject === 1
+              ? "*"
+              : formErrors.subject === 2
+              ? " max. 75*"
+              : null}
+          </span>
+        </label>
         <input
           type="text"
           value={contactForm.subject}
           name="subject"
           onChange={handleInputsChange}
+          className={style.formInput1}
         />
 
-        <label className={style.contactFormLabels}>Mensaje</label>
-        <input
-          type="text"
+        <label className={style.contactFormLabels}>
+          Mensaje{" "}
+          <span className={style.errorFormSpan}>
+            {formErrors.message === 1
+              ? "*"
+              : formErrors.message === 2
+              ? " max. 1000*"
+              : null}
+          </span>
+        </label>
+        <textarea
+          id="message"
           value={contactForm.message}
           name="message"
           onChange={handleInputsChange}
+          className={style.formInput2}
+          rows="4" 
+          cols="50"
         />
-        <button type="submit">Enviar</button>
+        {submittedForm ? (
+          <button type="button" className={style.trueButton}>
+            ...
+          </button>
+        ) : errorVerification() ? (
+          <button type="submit" className={style.trueButton}>
+            Enviar
+          </button>
+        ) : (
+          <button type="button" className={style.falseButton}>
+            Enviar
+          </button>
+        )}
       </form>
     </div>
   );

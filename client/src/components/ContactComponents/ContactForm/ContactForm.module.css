@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 .contactFormMainDiv {
   position: absolute;
 }
 .contactFormTitle1 {
+  font-family: 'Quicksand', sans-serif;
   position: absolute;
   color: white;
 }
@@ -12,7 +14,49 @@
   flex-direction: column;
 }
 .contactFormLabels {
+  font-family: 'Quicksand', sans-serif;
   color: white;
+}
+.formInput1 {
+  background-color: #494949;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  padding: 0.5vw;
+  vertical-align: text-top;
+  text-align: left;
+  font-size: 1vw;
+  width: 40vw;
+  height: 7vh;
+  margin-bottom: 1vw;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.formInput2 {
+  color: white;
+  background-color: #494949;
+  font-family: 'Quicksand', sans-serif;
+  padding: 1vh;
+  text-align: left;
+  font-size: 1vw;
+  width: 40vw;
+  height: 25vh;
+  resize: none;
+}
+.formInput2::-webkit-scrollbar {
+  width: .5vw;
+}
+.formInput2::-webkit-scrollbar-track {
+  background-color: #838383;
+  
+}
+.formInput2::-webkit-scrollbar-thumb { 
+  border-radius: 2vw;
+  width: .6vw;
+  background-color: #0a0a0a;
+}
+.errorFormSpan {
+  color: rgb(255, 85, 85);
 }
 .statusSpan1True {
   font-size: 1.5vw;
@@ -24,25 +68,29 @@
   width: 15vw;
   height: auto;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: .5vw;
+  border-radius: 0.5vw;
   padding: 2vh;
-  transition: .3s;
+  transition: 0.3s;
 }
 .statusSpan1False {
-    font-size: 1.5vw;
-    color: white;
-    position: fixed;
-    top: 5vh;
-    right: 5vw;
-    background-color: rgba(138, 25, 25, 0.644);
-    width: 15vw;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: .5vw;
-    padding: 2vh;
-    transition: .3s;
+  font-size: 1.5vw;
+  color: white;
+  position: fixed;
+  top: 5vh;
+  right: 5vw;
+  background-color: rgba(138, 25, 25, 0.644);
+  width: 15vw;
+  height: auto;
+  display: flex;
+  border-radius: 0.5vw;
+  padding: 2vh;
+  transition: 0.3s;
+}
+.trueButton {
+  cursor: cell;
+  background-color: #a54ff0;
+}
+.falseButton {
+  cursor: cell;
+  background-color: #b4a2c4;
 }
