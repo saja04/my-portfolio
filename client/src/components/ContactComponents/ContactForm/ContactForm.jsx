@@ -157,7 +157,6 @@ const ContactForm = () => {
       }
       setSubmittedForm(false);
     } catch (error) {
-      console.log(error.message);
       toast.error(
         "Error al enviar email, aguarda un momento y vuelve a intentarlo"
       );
