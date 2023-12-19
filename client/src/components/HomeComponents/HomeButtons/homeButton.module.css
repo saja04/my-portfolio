@@ -26,7 +26,8 @@
     content: "";
     position: absolute;
     width: 1vw;
-    top: -2vh;
+    height: 1vh;
+    top: -1.9vh;
     left: 50%;
     margin-left: -.5vw;
     border-width: .5vw;
