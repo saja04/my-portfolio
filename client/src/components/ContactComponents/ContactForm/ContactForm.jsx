@@ -192,7 +192,7 @@ const ContactForm = () => {
           Tu nombre completo
           <span className={style.errorFormSpan}>
             {formErrors.name === 1
-              ? "*"
+              ? " *"
               : formErrors.name === 2
               ? " max. 50*"
               : null}
@@ -210,7 +210,7 @@ const ContactForm = () => {
           Correo electronico
           <span className={style.errorFormSpan}>
             {formErrors.mail === 1
-              ? "*"
+              ? " *"
               : formErrors.mail === 2
               ? " max. 100*"
               : formErrors.mail === 3
@@ -230,7 +230,7 @@ const ContactForm = () => {
           Asunto
           <span className={style.errorFormSpan}>
             {formErrors.subject === 1
-              ? "*"
+              ? " *"
               : formErrors.subject === 2
               ? " max. 75*"
               : null}
@@ -248,7 +248,7 @@ const ContactForm = () => {
           Mensaje{" "}
           <span className={style.errorFormSpan}>
             {formErrors.message === 1
-              ? "*"
+              ? " *"
               : formErrors.message === 2
               ? " max. 1000*"
               : null}
