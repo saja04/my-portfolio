@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+.footerMainDiv {
+  box-sizing: border-box;
+  position: absolute;
+  margin-left: 9vw;
+  width: 90.55vw;
+  height: 20vh;
+  background-color: black;
+}
+.footerTitle1{
+  font-family: "Quicksand", sans-serif;
+  position: inherit;
+  color: #A54FF0;
+  left: 3vw;
+  top: 3vh;
+  font-size: 1.3vw;
+}
+.footerSubtitleDiv{
+  position: inherit;
+  top: 7vh;
+  left: 5vw;
+}
+.footerSubtitle1{
+  font-family: "Quicksand", sans-serif;
+  /* position: inherit; */
+  color: rgb(122, 122, 122);
+  left: 5vw;
+  top: 3vh;
+  font-size: .9vw;
+  margin-bottom: .5vh;
+}
+.footerTitle2Div{
+  top: 8.5vh;
+  right: 23.5vw;
+  position: absolute;
+}
+.footerTitle2{
+  text-align: right;
+  font-family: "Quicksand", sans-serif;
+  color: rgb(122, 122, 122);
+  font-size: .9vw;
+  margin-bottom: 1vh;
+}
+.mapFrame{
+  border-radius: .3vw;
+  position: absolute;
+  top: 2.5vh;
+  left: 30vw;
+  width: 30vw;
+  height: 15vh;
+}
+.footerTitle3{
+  font-family: "Quicksand", sans-serif;
+  position: absolute;
+  top: 5vh;
+  right:3vw;
+  font-size: 1.5vw;
+  color: rgb(185, 185, 185);
+}
+.buttonsDiv{
+
+  position: inherit;
+  top: 9vh;
+  right: 3.5vw;
+  display: flex;
+}
+.mainLinks{
+  margin-left: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5vw;
+  height: 3.5vh;
+  margin-top: 1.5vh;
+  border-radius: .3vw;
+  transition: .3s;
+
+}
+.mainLinks:hover{
+  scale: 20px;
+  transition: .3s;
+  transform: scale(0.9);
+}
+
+.mainLinks:active{
+  background-color: white;
+  transform: scale(1);
+  transition: .3s;
+}
+.logos{
+  width: 1.5vw;
+}
+.logoHenry{
+  margin-top: 0.4vh;
+  width: 1.5vw;
+}

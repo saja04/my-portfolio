@@ -6,6 +6,7 @@ import Portfolio from "./views/Portfolio/Portfolio";
 import CodeCarProject from "./components/PortfolioComponents/IndividualPages/codeCar/CodeCarPortfolio";
 import Contact from "./views/Contact/Contact";
 import { useEffect } from "react";
+import "./App.css";
 const SERVER_URL = import.meta.env.VITE_SERVER_URL;
 
 function App() {

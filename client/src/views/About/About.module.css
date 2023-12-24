@@ -9,19 +9,21 @@
   background-position: center;
 }
 
-body::-webkit-scrollbar{
-  position:fixed;
-  width: .5vw;
+body::-webkit-scrollbar {
+  position: fixed;
+  width: 0.5vw;
   background: #252424;
+  scroll-behavior:smooth;
 }
-body::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb {
   position: fixed;
   border-radius: 2vw;
   background: #6e6b6b;
+  scroll-behavior:smooth;
 }
-body::-webkit-scrollbar-track{
+body::-webkit-scrollbar-track {
   position: fixed;
-  
+  scroll-behavior:smooth;
   width: 10vw;
 }
 

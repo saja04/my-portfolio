@@ -1,36 +1,46 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
 .contactMainDiv {
-  position: absolute;
+  position: sticky;
   margin-left: 9vw;
-  width: 91vw;
+  width: 90.55vw;
   height: 100vh;
   background: rgb(37, 36, 36);
 }
 .contactTitle1 {
   color: white;
   margin-left: 60vw;
-  margin-top: 5vh;
+  padding-top: 5vh;
   font-size: 4vw;
   font-family: "Quicksand", sans-serif;
 }
 .whatsappLink {
-  position: absolute;
+  top: 80vh;
   text-decoration: none;
   color: white;
   font-size: 2.5vw;
-  margin-top: 70vh;
+  position: absolute;
   margin-left: 55vw;
   font-family: "Quicksand", sans-serif;
-  transition: .3s;
+  transition: 0.3s;
 }
-.whatsappLink:hover{
+.whatsappLink:hover {
+  box-sizing: border-box;
   transform: scale(1.1);
-  transition: .3s;
+  transition: 0.3s;
 }
 .redirectImg {
   width: 2.5vw;
 }
 .contactSpan1 {
   color: #38d956;
+}
+.mailTitle {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 1.3vw;
+  position: absolute;
+  top: 90vh;
+  margin-left: 66vw;
+  color: rgba(255, 255, 255, 0.644);
 }
