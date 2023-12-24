@@ -4,6 +4,7 @@ import AboutBody from "../../components/AboutComponents/AboutBody/AboutBody";
 import AboutImage from "../../components/AboutComponents/AboutImage/AboutImage";
 import AboutInformation from "../../components/AboutComponents/AboutInformation/AboutInformation";
 import PortfolioPreview from "../../components/AboutComponents/PortfolioPreview/PortfolioPreview";
+import Footer from '../../components/Footer/Footer'
 
 const About = () => {
   return (
@@ -19,6 +20,7 @@ const About = () => {
         <AboutInformation />
         <PortfolioPreview />
       </div>
+      <Footer/>
     </>
   );
 };

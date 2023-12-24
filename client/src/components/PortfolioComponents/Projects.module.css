@@ -2,9 +2,10 @@
 
 .projectsMainDiv {
   position: absolute;
+  top: 25vh;
   left: 9vw;
   width: 90.55vw;
-  height: 123vh;
+  /* height: 123vh; */
 }
 .projectsDiv {
   padding: 1.5vw;
@@ -15,7 +16,7 @@
     rgba(71, 71, 71, 1) 0%,
     rgba(37, 36, 36, 1) 100%
   );
-  margin-top: 25vh;
+  /* margin-top: 25vh; */
   margin-left: 7vw;
   margin-right: 5vw;
   margin-bottom: 5vh;

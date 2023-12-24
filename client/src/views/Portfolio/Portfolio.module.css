@@ -1,16 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
 .mainDivPortfolio {
-  position: absolute;
+  position: sticky;
   left: 9vw;
   width: 90.55vw;
   height: 123vh;
   background-color: #252424;
+  background-size: cover;
+  background-position: center;
   display: flex;
 }
 
 .title1 {
-    margin-top: 5vh;
+  margin-top: 5vh;
   font-size: 5vw;
   font-family: "Quicksand", sans-serif;
   cursor: default;
