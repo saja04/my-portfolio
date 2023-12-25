@@ -9,8 +9,10 @@ const HomeButtons = () => {
       <div className={style.buttonsDiv}>
         <button className={style.curriculumButton}>
           <a
-            href="https://www.linkedin.com/in/federico-saa-4ab74b297/"
+            href="https://drive.google.com/file/d/1UH4I9JOKhItHjzS2j9fXVLEgksl5DBoX/view?usp=sharing"
             className={style.curriculumLink}
+            rel="noreferrer"
+            target="_blank"
           >
             Curriculum
           </a>
