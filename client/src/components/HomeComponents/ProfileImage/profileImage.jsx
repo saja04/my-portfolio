@@ -1,5 +1,5 @@
 import style from './profileImage.module.css'
-import profileImage from '../../../assets/blank.png'
+import profileImage from '../../../assets/edit.png'
 
 const ProfileImage = () => {
 
