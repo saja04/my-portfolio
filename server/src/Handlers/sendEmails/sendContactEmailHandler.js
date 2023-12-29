@@ -10,7 +10,6 @@ const sendContactEmailHandler = async (req, res) => {
         .send(
           "missing information, please check variable names and/or requirements!"
         );
-    // const mailChecker = /^[^\s@]{1,100}@[^\s@]{1,50}\.[^\s@]{1,20}$/;
     const check = /^[^\s@]{1,100}@[^\s@]{1,50}\.[^\s@]{1,20}$/.test(userEmail); // checks if user email could exist and maximizes length
     if (!check) return res.status(401).send("invalid email!");
     if (userName.length > 100) return res.status(401).send("name is too long!"); //maximizes length
