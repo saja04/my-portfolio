@@ -2,6 +2,7 @@ import style from "./ContactForm.module.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
+import { ScaleLoader } from "react-spinners";
 const SERVER_URL = import.meta.env.VITE_SERVER_URL;
 
 const ContactForm = () => {
@@ -154,8 +155,8 @@ const ContactForm = () => {
           message: 1,
         });
         toast.success("Mensaje enviado");
+        setSubmittedForm(false)
       }
-      setSubmittedForm(false);
     } catch (error) {
       toast.error(
         "Error al enviar email, aguarda un momento y vuelve a intentarlo"
@@ -264,7 +265,9 @@ const ContactForm = () => {
           cols="50"
         />
         {submittedForm ? (
-          <span className={style.falseButton}>...</span>
+          <span className={style.falseButton}>
+            <ScaleLoader color="#696969" />
+          </span>
         ) : errorVerification() ? (
           <button type="submit" className={style.trueButton}>
             Enviar
