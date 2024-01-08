@@ -52,12 +52,12 @@
   color: black;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 700px) {
   .mainDiv {
+    z-index: 1;
     display: flex;
     position: fixed;
     flex-direction: row;
-    /* align-items: center; */
     background: linear-gradient(-45deg, rgb(38, 0, 71), rgb(76, 0, 143));
     width: 100vw;
     height: 10vh;
@@ -70,7 +70,7 @@
   }
   
   .logo {
-    margin-left: 5vw;
+    margin-left: 7vw;
     width: 9vh;
     height: max-content;
   }
@@ -86,12 +86,12 @@
     flex-direction: row;
     width: 100vw;
     margin-top: .9vh;
-    right: 1vw;
+    margin-left: 13vw;
   }
   
   .buttonLogo {
     width: 3vh;
-    margin-left: 0vw;
+    margin-left: 10vw;
     transition: 0.3s;
   }
   
