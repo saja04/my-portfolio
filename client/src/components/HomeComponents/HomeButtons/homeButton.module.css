@@ -131,11 +131,11 @@
   .mainDiv {
     position: absolute;
     top: 150vh;
-    right: 14.5vw;
+    left: 2vw;
   }
 
   .jobTitle {
-    margin-left: 14.3vw;
+    margin-left: 31.5vw;
     color: rgb(255, 255, 255);
     display: inline-block;
     margin-top: 1vh;
@@ -146,17 +146,17 @@
     width: fit-content;
     text-align: center;
     font-family: "Quicksand", sans-serif;
-    font-size: 1.2vw;
+    font-size: 3vw;
   }
   .jobTitle::before {
     content: "";
     position: absolute;
     width: 1vw;
-    height: 1vh;
-    top: -1.9vh;
-    left: 50%;
+    height: 2vh;
+    top: -1.8vh;
+    left: 45%;
     margin-left: -0.5vw;
-    border-width: 0.5vw;
+    border-width: 2vw;
     border-style: solid;
     border-color: transparent transparent #2c0052 transparent;
   }
@@ -170,8 +170,8 @@
     background-color: none;
     background: none;
     color: none;
-    margin-right: 3vw;
-    width: 15vw;
+    margin-right: 1vw;
+    width: 40vw;
     height: 10vh;
     border-radius: 10vw;
     transition: 0.3s;
@@ -192,13 +192,12 @@
     align-items: center;
     justify-content: center;
     margin-right: 1vw;
-    width: 15vw;
+    width: 40vw;
     height: 10vh;
-
     text-decoration: none;
     color: white;
     font-family: "Quicksand", sans-serif;
-    font-size: 1.5vw;
+    font-size: 5vw;
     background-color: #a54ff0;
     border-radius: 10vw;
     box-shadow: 0 1vh #20202098;
@@ -217,15 +216,16 @@
   }
 
   .mainLinks {
-    margin-left: 2vw;
+    padding: 2vw;
+    margin-left: 3vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 3.7vw;
-    height: 7.2vh;
-    margin-top: 1.5vh;
+    width: 20vw;
+    height: 7vh;
+    margin-top: 1.7vh;
     background-color: #353535;
-    border-radius: 1vw;
+    border-radius: 2vw;
     box-shadow: 0 5px rgba(39, 39, 39, 0.582);
     transition: 0.3s;
   }
@@ -245,11 +245,11 @@
   }
 
   .logos {
-    width: 2vw;
+    width: 10vw;
   }
 
   .logoHenry {
     margin-top: 0.4vh;
-    width: 2vw;
+    width: 10vw;
   }
 }
