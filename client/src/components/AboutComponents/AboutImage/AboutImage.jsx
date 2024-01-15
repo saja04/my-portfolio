@@ -1,4 +1,3 @@
-import abtMePhoto from "../../../assets/abt-me-photo.jpg";
 import style from './AboutImage.module.css'
 
 const AboutImage = () => {
