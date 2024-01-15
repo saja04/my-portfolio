@@ -72,7 +72,7 @@
   .logo {
     margin-left: 7vw;
     width: 15vw;
-    height: max-content;
+    height: auto;
   }
   
   .NavLink {
