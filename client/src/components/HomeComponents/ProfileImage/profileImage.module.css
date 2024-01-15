@@ -10,9 +10,9 @@
 @media screen and (max-width: 700px) {
   .profileImage1 {
     position: absolute;
-    margin-top: 75vh;
-    margin-left: 10vw;
-    width: 80vw;
+    margin-top: 70vh;
+    margin-left: 7vw;
+    width: 35vh;
     height: auto;
     border-radius: 100%;
     box-shadow: 1vw 0 #a54ff0, 2vw 0 #593678, 3vw 0 #392b44;

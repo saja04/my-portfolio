@@ -59,16 +59,16 @@
     display: flex;
     margin-right: 1vw;
     font-family: "Quicksand", sans-serif;
-    font-size: 23vw;
+    font-size: 9vh;
   }
   .presentationSpan {
-    margin-top: 7vh;
+    margin-top: 5vh;
     color: white;
     display: flex;
     flex-direction: row;
     margin-right: 1vw;
     font-family: "Quicksand", sans-serif;
-    font-size: 15vw;
+    font-size: 7vh;
     margin-bottom: 0;
   }
   .name {
@@ -86,7 +86,7 @@
     display: flex;
     color: #a54ff0;
     font-family: "Quicksand", sans-serif;
-    font-size: 23vw;
+    font-size: 10vh;
   }
   .saa {
     display: flex;
@@ -94,7 +94,7 @@
     margin-bottom: 0;
     color: white;
     font-family: "Quicksand", sans-serif;
-    font-size: 23vw;
+    font-size: 9vh;
   }
 
   .normalText {
