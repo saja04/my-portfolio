@@ -12,7 +12,7 @@ Visit here: https://fedesaa.vercel.app/
   * Used [NodeMailer](https://nodemailer.com/) for the contact form wich sends me an email with the information
 
 DISCLAIMER! this project is still in development, although the web page is actually usable and completely functional, I'm constantly adding features or solving issues.
-You can report bugs directly in the repository page: 
+You can report bugs directly in the repository page: [Issues](https://github.com/saja04/my-portfolio/issues) 
 
 
 
