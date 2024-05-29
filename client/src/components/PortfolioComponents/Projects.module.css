@@ -47,7 +47,7 @@
 .projectCarCode {
   border: 0.3vw solid black;
   border-radius: 1vw;
-  background-image: url("https://cdn.discordapp.com/attachments/1080681344264314920/1189005202880208956/carCodePage.png?ex=659c9663&is=658a2163&hm=a48d78dc3b5c99e73b7f4cd13d8dc9c3753ff690ad1fbdf9e5df1b7deaa67034&");
+  background-image: url("../../assets/carCodePage.png");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -60,12 +60,12 @@
 .projectCarCode:hover {
   transform: scale(0.95);
   transition: 0.3s;
-  background-image: url("https://cdn.discordapp.com/attachments/1080681344264314920/1189005203232522321/carCodePageDark.png?ex=659c9663&is=658a2163&hm=b92f2191e850af6dd4d32ce31fae827afb3db65fdd77eb1e568215906f9d6fb1&");
+  background-image: url("../../assets/carCodePageDark.png");
 }
 .projectPortfolio {
   border: 0.3vw solid black;
   border-radius: 1vw;
-  background-image: url("https://cdn.discordapp.com/attachments/1080681344264314920/1189005204100743169/portfolio.png?ex=659c9663&is=658a2163&hm=5feea2f9f374d543e4c9efc7c0925aa4a8dcf87caf7ac4074a167825decda85f&");
+  background-image: url("../../assets/portfolio.png");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -78,12 +78,12 @@
 .projectPortfolio:hover {
   transform: scale(0.95);
   transition: 0.3s;
-  background-image: url("https://cdn.discordapp.com/attachments/1080681344264314920/1189005204444688494/portfolioBlack.png?ex=659c9663&is=658a2163&hm=0736e6ebc8d3e5883295b9968a18ca94b2422c920ae5c341c8cc961e9f79c2e8&");
+  background-image: url("../../assets/portfolioBlack.png");
 }
 .projectPokedex {
   border: 0.3vw solid black;
   border-radius: 1vw;
-  background-image: url("https://cdn.discordapp.com/attachments/1080681344264314920/1189005203509358684/pokedex.png?ex=659c9663&is=658a2163&hm=906429ed16767e394cf086920b8f838c8e5cd1ff8ba1a53864eef0bfff711ab6&");
+  background-image: url("../../assets/pokedex.png");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -96,12 +96,12 @@
 .projectPokedex:hover {
   transform: scale(0.95);
   transition: 0.3s;
-  background-image: url("https://cdn.discordapp.com/attachments/1080681344264314920/1189005203765207050/pokedexBlack.png?ex=659c9663&is=658a2163&hm=ec034d4fcd7ee9dac501a4b219d942120427e5c7b680d3a930e22075ee39ec72&");
+  background-image: url("../../assets/pokedexBlack.png");
 }
 .projectRyM {
   border: 0.3vw solid black;
   border-radius: 1vw;
-  background-image: url("https://cdn.discordapp.com/attachments/1080681344264314920/1189005205015109712/rym.png?ex=659c9663&is=658a2163&hm=87520973aaaa53c48527e8e97affbaf4d58d4314572b139736d404469e19a8cf&");
+  background-image: url("../../assets/rym.png");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -114,7 +114,7 @@
 .projectRyM:hover {
   transform: scale(0.95);
   transition: 0.3s;
-  background-image: url("https://cdn.discordapp.com/attachments/1080681344264314920/1189005202389479544/rymBlack.png?ex=659c9662&is=658a2162&hm=1cacc4e9b7d1e642095a563bb9f13a09942716365a46e1f1faa3501b80ddccc8&");
+  background-image: url("../../assets/rymBlack.png");
 }
 .links {
   text-decoration: none;
