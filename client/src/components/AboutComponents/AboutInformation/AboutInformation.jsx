@@ -5,7 +5,6 @@ import reactpb from "../../../assets/pb/reactpb.png";
 import postgresqlpb from "../../../assets/pb/postgresqlpb.png";
 import htmlcsspb from "../../../assets/pb/htmlcsspb.png";
 
-
 const AboutInformation = () => {
   return (
     <>
@@ -15,11 +14,11 @@ const AboutInformation = () => {
             Habilidades <span className={style.hardText}>Duras</span>
           </h2>
           <div className={style.abilitiesContainer}>
-            <img src={nodepb} alt="node" />
-            <img src={expresspb} alt="express" />
-            <img src={reactpb} alt="react" />
-            <img src={postgresqlpb} alt="postgres" />
-            <img src={htmlcsspb} alt="html"/>
+            <img src={nodepb} alt="node" className={style.hardLogo}/>
+            <img src={expresspb} alt="express" className={style.hardLogo}/>
+            <img src={reactpb} alt="react" className={style.hardLogo}/>
+            <img src={postgresqlpb} alt="postgres" className={style.hardLogo}/>
+            <img src={htmlcsspb} alt="html" className={style.hardLogo}/>
           </div>
         </div>
         <div className={style.softContainer}>
@@ -27,11 +26,11 @@ const AboutInformation = () => {
             Habilidades<span className={style.softText}>Blandas</span>
           </h2>
           <div className={style.sAbilitiesContainer}>
-            <h4>Comunicación</h4>
-            <h4>Trabajo En Equipo</h4>
-            <h4>Pensamiento Crítico</h4>
-            <h4>Gestión de crisis</h4>
-            <h4>Colaborativo</h4>
+            <h4 className={style.softSkillsText}>Comunicación</h4>
+            <h4 className={style.softSkillsText}>Trabajo En Equipo</h4>
+            <h4 className={style.softSkillsText}>Pensamiento Crítico</h4>
+            <h4 className={style.softSkillsText}>Gestión de crisis</h4>
+            <h4 className={style.softSkillsText}>Colaborativo</h4>
           </div>
         </div>
       </div>

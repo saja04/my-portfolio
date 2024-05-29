@@ -1,4 +1,3 @@
-import React from "react";
 import style from "./Home.module.css";
 import NavBar from "../../components/NavBar/navBar";
 import HomeBody from "../../components/HomeComponents/HomeBody/homeBody";

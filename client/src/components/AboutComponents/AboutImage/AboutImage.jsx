@@ -1,5 +1,5 @@
-import abtMePhoto from "../../../assets/abt-me-photo.jpg";
 import style from './AboutImage.module.css'
+import abtMePhoto from '../../../assets/abt-me-photo.jpg'
 
 const AboutImage = () => {
     return(

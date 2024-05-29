@@ -6,10 +6,26 @@
     top: 35vh;
     margin-right: 5vw;
 }
-.mainDiv h3{
+.abtText{
     font-family: 'Quicksand', sans-serif;
     font-size: 1.6vw;
     color: white;
     cursor: default;
+}
+
+@media screen and (max-width: 700px) {
+    .mainDiv{
+        position: absolute;
+        text-align: center  ;
+        left: 10vw;
+        top: 70vh;
+        margin-right: 5vw;
+    }
+    .abtText{
+        font-family: 'Quicksand', sans-serif;
+        font-size: 2vh;
+        color: white;
+        cursor: default;
+    }
 }
   

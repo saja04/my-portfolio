@@ -1,133 +1,255 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
-
-.mainDiv{
-    position: absolute;
-    top: 65vh;
-    right: 14.5vw;
+.mainDiv {
+  position: absolute;
+  top: 65vh;
+  right: 14.5vw;
 }
 
-.jobTitle{
-    margin-left: 14.3vw;
+.jobTitle {
+  margin-left: 14.3vw;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  margin-top: 1vh;
+  background-color: #2c0052;
+  border-radius: 1vw;
+  padding: 1.7vh;
+  position: absolute;
+  width: fit-content;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2vw;
+}
+.jobTitle::before {
+  content: "";
+  position: absolute;
+  width: 1vw;
+  height: 1vh;
+  top: -1.9vh;
+  left: 50%;
+  margin-left: -0.5vw;
+  border-width: 0.5vw;
+  border-style: solid;
+  border-color: transparent transparent #2c0052 transparent;
+}
+
+.buttonsDiv {
+  display: flex;
+}
+
+.curriculumButton {
+  border: none;
+  background-color: none;
+  background: none;
+  color: none;
+  margin-right: 3vw;
+  width: 15vw;
+  height: 10vh;
+  border-radius: 10vw;
+  transition: 0.3s;
+}
+
+.curriculumButton:hover {
+  border: none;
+  background-color: none;
+  background: none;
+  color: none;
+  /* margin-right: 1vw; */
+  /* width: 10vw; */
+  border-radius: 10vw;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.curriculumLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1vw;
+  width: 15vw;
+  height: 10vh;
+
+  text-decoration: none;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5vw;
+  background-color: #a54ff0;
+  border-radius: 10vw;
+  box-shadow: 0 1vh #20202098;
+  transition: 0.3s;
+}
+.curriculumLink:hover {
+  background-color: #9e3ef1;
+  box-shadow: 0 0.5vw #202020bb;
+  transition: 0.3s;
+}
+
+.curriculumLink:active {
+  background-color: black;
+  transform: scale(0.9);
+  transition: 0.3s;
+}
+
+.mainLinks {
+  margin-left: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.7vw;
+  height: 7.2vh;
+  margin-top: 1.5vh;
+  background-color: #353535;
+  border-radius: 1vw;
+  box-shadow: 0 5px rgba(39, 39, 39, 0.582);
+  transition: 0.3s;
+}
+
+.mainLinks:hover {
+  scale: 20px;
+  background-color: #474747;
+  box-shadow: 0 5px rgba(27, 27, 27, 0.185);
+  transition: 0.3s;
+  transform: scale(0.9);
+}
+
+.mainLinks:active {
+  background-color: white;
+  transform: scale(1);
+  transition: 0.3s;
+}
+
+.logos {
+  width: 2vw;
+}
+
+.logoHenry {
+  margin-top: 0.4vh;
+  width: 2vw;
+}
+
+@media screen and (max-width: 700px) {
+  .mainDiv {
+    position: absolute;
+    top: 150vh;
+    left: 2vw;
+  }
+
+  .jobTitle {
+    margin-left: 31.5vw;
     color: rgb(255, 255, 255);
     display: inline-block;
     margin-top: 1vh;
-    background-color: #2C0052;
+    background-color: #2c0052;
     border-radius: 1vw;
     padding: 1.7vh;
     position: absolute;
     width: fit-content;
     text-align: center;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1.2vw;
-
-}
-.jobTitle::before {
+    font-family: "Quicksand", sans-serif;
+    font-size: 3vw;
+  }
+  .jobTitle::before {
     content: "";
     position: absolute;
     width: 1vw;
-    height: 1vh;
-    top: -1.9vh;
-    left: 50%;
-    margin-left: -.5vw;
-    border-width: .5vw;
+    height: 2vh;
+    top: -1.8vh;
+    left: 45%;
+    margin-left: -0.5vw;
+    border-width: 2vw;
     border-style: solid;
-    border-color: transparent transparent #2C0052 transparent;
-}
+    border-color: transparent transparent #2c0052 transparent;
+  }
 
-.buttonsDiv{
+  .buttonsDiv {
     display: flex;
-}
+  }
 
-.curriculumButton{
+  .curriculumButton {
     border: none;
     background-color: none;
     background: none;
     color: none;
-    margin-right: 3vw;
-    width: 15vw;
+    margin-right: 1vw;
+    width: 40vw;
     height: 10vh;
     border-radius: 10vw;
-    transition: .3s;
-}
+    transition: 0.3s;
+  }
 
-.curriculumButton:hover{
+  .curriculumButton:hover {
     border: none;
     background-color: none;
     background: none;
     color: none;
-    /* margin-right: 1vw; */
-    /* width: 10vw; */
     border-radius: 10vw;
-    transition: .3s;
+    transition: 0.3s;
     transform: scale(1.1);
-}
+  }
 
-.curriculumLink{
+  .curriculumLink {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 1vw;
-    width: 15vw;
+    width: 40vw;
     height: 10vh;
-
     text-decoration: none;
     color: white;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1.5vw;
+    font-family: "Quicksand", sans-serif;
+    font-size: 5vw;
     background-color: #a54ff0;
     border-radius: 10vw;
     box-shadow: 0 1vh #20202098;
-    transition: .3s;
-
-}
-.curriculumLink:hover{
+    transition: 0.3s;
+  }
+  .curriculumLink:hover {
     background-color: #9e3ef1;
-   box-shadow: 0 0.5vw #202020bb;
-   transition: .3s;
-}
+    box-shadow: 0 0.5vw #202020bb;
+    transition: 0.3s;
+  }
 
-.curriculumLink:active{
+  .curriculumLink:active {
     background-color: black;
     transform: scale(0.9);
-    transition: .3s;
-}
+    transition: 0.3s;
+  }
 
-.mainLinks{
-    margin-left: 2vw;
+  .mainLinks {
+    padding: 2vw;
+    margin-left: 3vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 3.7vw;
-    height: 7.2vh;
-    margin-top: 1.5vh;
+    width: 20vw;
+    height: 7vh;
+    margin-top: 1.7vh;
     background-color: #353535;
-    border-radius: 1vw;
+    border-radius: 2vw;
     box-shadow: 0 5px rgba(39, 39, 39, 0.582);
-    transition: .3s;
+    transition: 0.3s;
+  }
 
-}
-
-.mainLinks:hover{
+  .mainLinks:hover {
     scale: 20px;
     background-color: #474747;
     box-shadow: 0 5px rgba(27, 27, 27, 0.185);
-    transition: .3s;
+    transition: 0.3s;
     transform: scale(0.9);
-}
+  }
 
-.mainLinks:active{
+  .mainLinks:active {
     background-color: white;
     transform: scale(1);
-    transition: .3s;
-}
+    transition: 0.3s;
+  }
 
+  .logos {
+    width: 10vw;
+  }
 
-.logos{
-    width: 2vw;
-}
-
-.logoHenry{
+  .logoHenry {
     margin-top: 0.4vh;
-    width: 2vw;
+    width: 10vw;
+  }
 }

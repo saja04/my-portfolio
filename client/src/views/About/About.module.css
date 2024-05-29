@@ -13,17 +13,17 @@ body::-webkit-scrollbar {
   position: fixed;
   width: 0.5vw;
   background: #252424;
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
 body::-webkit-scrollbar-thumb {
   position: fixed;
   border-radius: 2vw;
   background: #6e6b6b;
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
 body::-webkit-scrollbar-track {
   position: fixed;
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
   width: 10vw;
 }
 
@@ -35,12 +35,9 @@ body::-webkit-scrollbar-track {
   height: fit-content;
   display: flex;
 }
-.texts h1 {
+.aboutMe {
   font-size: 5vw;
   font-family: "Quicksand", sans-serif;
-  cursor: default;
-}
-.aboutMe {
   display: flex;
   width: max-content;
   height: fit-content;
@@ -50,9 +47,61 @@ body::-webkit-scrollbar-track {
   cursor: default;
 }
 .me {
+  font-size: 5vw;
+  font-family: "Quicksand", sans-serif;
   display: flex;
   height: fit-content;
   width: max-content;
   color: #a54ff0;
   cursor: default;
+}
+@media screen and (max-width: 700px) {
+  .mainDiv {
+    width: 100vw;
+    height: 308vh;
+    display: flex;
+    background: rgb(37, 36, 36);
+    background-size: cover;
+    background-position: center;
+  }
+
+  body::-webkit-scrollbar {
+    position: fixed;
+    width: 0.5vw;
+    background: #252424;
+    scroll-behavior: smooth;
+  }
+  body::-webkit-scrollbar-thumb {
+    position: fixed;
+    border-radius: 2vw;
+    background: #6e6b6b;
+    scroll-behavior: smooth;
+  }
+  body::-webkit-scrollbar-track {
+    position: fixed;
+    scroll-behavior: smooth;
+    width: 10vw;
+  }
+
+  .texts {
+    align-items: center;
+    margin-top: 15vh;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+  }
+  .aboutMe {
+    font-size: 12vw;
+    font-family: "Quicksand", sans-serif;
+    margin-right: 2vw;
+    color: white;
+    cursor: default;
+    margin-left: 20vw;
+  }
+  .me {
+    font-size: 12vw;
+    font-family: "Quicksand", sans-serif;
+    color: #a54ff0;
+    cursor: default;
+  }
 }

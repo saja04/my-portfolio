@@ -10,3 +10,19 @@
     border: .4vw solid #460085;
     border-radius: 1vw;
 }
+
+@media screen and (max-width: 700px) {
+    .mainDiv{
+        display: flex;
+        position: absolute;
+        left: 10vw;
+        margin-top: 26vh;
+    }
+    .abtMePhoto{
+        margin-left: 0;
+        width: 30vh;
+        border: .4vw solid #460085;
+        border-radius: 1vw;
+    }
+
+}
