@@ -4,7 +4,7 @@ const AboutBody = () => {
   return (
     <div className={style.mainDiv}>
         <h3 className={style.abtText}>
-          Mi nombre es Federico Saa, tengo 19 años y naci en La Patagonia
+           Mi nombre es Federico Saa, tengo 19 años y naci en La Patagonia
           argentina, mas concrectamente en Río Gallegos, Santa Crúz. Actualmente
           estoy viviendo en la Ciudad de Buenos Aires.
           <br />
